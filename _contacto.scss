@@ -1,0 +1,59 @@
+/** Contacto **/
+
+.titulo-form {
+    color: black;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    letter-spacing: 0.5px;
+  }
+
+  .formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 70px;
+
+    .formulario button[type="submit"]:hover {
+      background-color: white;
+      width: 60px;
+      height: 30px;
+      
+    }
+  
+    .formulario button {
+      width: 50px;
+    }
+  
+    .contacto {
+      background-color: rgb(240, 240, 240);
+      
+    }
+  
+    .nombre {
+      grid-column: 1 / span 2;
+    }
+  
+    .destino {
+      grid-column: 1 / span 2;
+    }
+  
+    .tel {
+      grid-column: 1;
+    }
+  
+    .correo {
+      grid-column: 2;
+    }
+  
+    .mensaje {
+      grid-column: 1 / span 2;
+    }
+    
+  }
+  
+
+
+ /** Fin Contacto **/

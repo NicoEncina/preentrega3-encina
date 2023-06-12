@@ -1,0 +1,458 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-areas: "header header header header header" "aside main main main main" "aside main main main main" "aside main main main main" "aside main main main main" "footer footer footer footer footer";
+}
+
+header {
+  grid-area: header;
+  background-color: #0e2430;
+}
+
+main {
+  grid-area: main;
+  background-color: rgb(240, 240, 240);
+}
+
+aside {
+  grid-area: aside;
+  background-color: rgb(230, 230, 230);
+}
+
+footer {
+  grid-area: footer;
+  background-color: #DCE2AA;
+}
+
+/**Header**/
+.contenedor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedor-logo {
+  width: 200px;
+  margin-left: 20px;
+  margin: 0;
+}
+
+.logo {
+  width: 80px;
+  margin-top: 5%;
+}
+
+.contenedor-navegador {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.navegacion {
+  margin-bottom: 5px;
+}
+
+.navegacion a {
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.navegacion a:hover {
+  color: rgb(33, 52, 95);
+  transform: scale(1.1);
+  background-color: #c9c2c2;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  width: 650px;
+}
+
+input[type=text] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+  outline: none;
+}
+
+button[type=submit] {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+button[type=submit] svg {
+  fill: #999;
+  width: 24px;
+  height: 24px;
+  transition: all 0.2s ease-in-out;
+}
+
+button[type=submit]:hover svg {
+  fill: #333;
+}
+
+/**Fin Header**/
+/**Main**/
+.titulo-pagina {
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  letter-spacing: 0.5px;
+}
+
+.contenedor-card {
+  padding: 10px 0px;
+  display: grid;
+  grid-template-areas: "card1 card2 card3" "card4 card5 card6";
+  justify-items: center;
+  gap: 10px;
+  overflow: hidden;
+}
+.contenedor-card .card {
+  height: 500px;
+  width: 300px;
+  background-color: rgb(217, 217, 217);
+  display: flex;
+  border-radius: 4px;
+}
+.contenedor-card .card {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 60%;
+  border: solid rgb(154, 154, 154) 0.5px;
+  text-align: center;
+}
+.contenedor-card .card-img {
+  width: 100%;
+  border-radius: 5px;
+}
+.contenedor-card .info-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+/**Fin Main**/
+/**Aside**/
+.barra-lateral {
+  display: flex;
+  justify-content: center;
+}
+.barra-lateral .navegacion-aside {
+  display: flex;
+  margin: 20px;
+}
+.barra-lateral .navegacion-aside a {
+  color: rgb(52, 82, 154);
+  font-size: 25px;
+  text-decoration: none;
+}
+
+/**Fin Aside**/
+/**Footer**/
+.contenedor-footer {
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+}
+
+.derechos {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.tdr {
+  font-size: 15px;
+}
+
+.logo-footer {
+  display: flex;
+  width: 80px;
+}
+
+.telefono {
+  display: flex;
+  align-items: center;
+}
+
+.wp {
+  width: 40%;
+  height: 40%;
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+}
+
+/** Fin Footer **/
+/** Preguntas Frecuentes **/
+.preguntas-frecuentes {
+  background-color: rgb(240, 240, 240);
+}
+.preguntas-frecuentes .faq {
+  margin: 20px;
+}
+.preguntas-frecuentes .titulofq {
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  letter-spacing: 0.5px;
+}
+.preguntas-frecuentes .preguntas {
+  font-size: 18px;
+  color: #0e2430;
+  margin-bottom: 10px;
+}
+.preguntas-frecuentes .respuesta {
+  color: black;
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+/** Fin Preguntas Frecuentes **/
+/** Contacto **/
+.titulo-form {
+  color: black;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 30px;
+  letter-spacing: 0.5px;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 70px;
+}
+.formulario .formulario button[type=submit]:hover {
+  background-color: white;
+  width: 60px;
+  height: 30px;
+}
+.formulario .formulario button {
+  width: 50px;
+}
+.formulario .contacto {
+  background-color: rgb(240, 240, 240);
+}
+.formulario .nombre {
+  grid-column: 1/span 2;
+}
+.formulario .destino {
+  grid-column: 1/span 2;
+}
+.formulario .tel {
+  grid-column: 1;
+}
+.formulario .correo {
+  grid-column: 2;
+}
+.formulario .mensaje {
+  grid-column: 1/span 2;
+}
+
+/** Fin Contacto **/
+/** Nosotros **/
+.nosotros {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nosotros .imagen-nosotros {
+  width: 300px;
+  border: 3px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 10px;
+}
+.nosotros .imagen-nosotros .imagen-nosotros1 {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.sobre-nosotros {
+  width: 50%;
+  padding: 10px;
+}
+.sobre-nosotros .parrafo-sobre-nosotros {
+  font-style: italic;
+  letter-spacing: 1px;
+  padding: 2px;
+}
+
+/** Fin Nosotros **/
+/** Destinos **/
+.destinos {
+  background-color: rgb(240, 240, 240);
+}
+
+.titulo-destinos {
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  letter-spacing: 0.5px;
+}
+
+.videos {
+  display: grid;
+  grid-template-areas: "maldivas lisboa barcelona" "rep-dominicana bali hawai" "escocia ajaccio lanzarote";
+  justify-content: space-evenly;
+  gap: 10px;
+  border-radius: 3px;
+  padding-bottom: 10px;
+}
+
+.maldivas {
+  grid-area: maldivas;
+}
+
+.lisboa {
+  grid-area: lisboa;
+}
+
+.barcelona {
+  grid-area: barcelona;
+}
+
+.rep-dominicana {
+  grid-area: rep-dominicana;
+}
+
+.bali {
+  grid-area: bali;
+}
+
+.hawai {
+  grid-area: hawai;
+}
+
+.ajaccio {
+  grid-area: ajaccio;
+}
+
+.escocia {
+  grid-area: escocia;
+}
+
+.lanzarote {
+  grid-area: lanzarote;
+}
+
+iframe {
+  border: 3px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/** Fin Destinos **/
+/** Paginas Responsives **/
+@media (max-width: 400px) {
+  aside {
+    display: none;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    grid-template-areas: "header header header header" "main main main main" "main main main main" "main main main main" "main main main main" "footer footer footer footer";
+  }
+  /** Header Responsive **/
+  .contenedor-header {
+    width: 380px;
+    flex-direction: column;
+  }
+  .contenedor-logo {
+    margin-left: 34%;
+  }
+  .buscador {
+    display: none;
+  }
+  .usuarios {
+    display: none;
+  }
+  .navegador a {
+    font-size: 11.5px;
+  }
+  /** Fin header responsive **/
+  /** Footer Responsive **/
+  .contenedor-footer {
+    width: 380px;
+    padding: 3px;
+    justify-content: space-between;
+  }
+  .logo-footer {
+    width: 40px;
+  }
+  .telefono img {
+    width: 20px;
+    height: 20px;
+    padding-left: 2px;
+  }
+  .redes img {
+    width: 20px;
+    height: 20px;
+  }
+  .redes {
+    align-items: flex-end;
+  }
+  .titulo-form {
+    font-size: 20px;
+  }
+  .formulario {
+    padding: 10px;
+    width: 300px;
+    justify-content: center;
+  }
+  .formulario button {
+    margin-left: 90%;
+  }
+  /**Inicio Responsive**/
+  .contenedor-card {
+    grid-template-areas: none;
+  }
+  /** Destino Responsive **/
+  .videos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    margin-left: 50px;
+  }
+  /** Nosotros **/
+  .nosotros {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .imagen-nosotros {
+    display: none;
+  }
+  .sobre-nosotros {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

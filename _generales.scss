@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+  
+body {
+    display: grid;
+    grid-template-areas:
+    "header header header header header"
+    "aside main main main main"
+    "aside main main main main"
+    "aside main main main main"
+    "aside main main main main"
+    "footer footer footer footer footer"
+    ;
+}
+
+header {
+    grid-area: header;
+    background-color: #0e2430;
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(240, 240, 240);
+    
+}
+
+aside {
+    grid-area: aside;
+    background-color: rgb(230, 230, 230);
+}
+
+footer {
+    grid-area: footer;
+    background-color: #DCE2AA;
+}

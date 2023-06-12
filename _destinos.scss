@@ -1,0 +1,69 @@
+/** Destinos **/
+
+.destinos {
+    background-color: rgb(240, 240, 240);
+    
+}
+
+.titulo-destinos {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    letter-spacing: 0.5px;
+
+}
+
+.videos {
+    display: grid;
+    grid-template-areas: 
+    "maldivas lisboa barcelona"
+    "rep-dominicana bali hawai"
+    "escocia ajaccio lanzarote";
+    justify-content: space-evenly;
+    gap: 10px;
+    border-radius: 3px;
+    padding-bottom: 10px;
+}
+
+.maldivas {
+    grid-area: maldivas;
+}
+
+.lisboa {
+    grid-area: lisboa;
+}
+
+.barcelona {
+    grid-area: barcelona;
+}
+
+.rep-dominicana {
+    grid-area: rep-dominicana;
+}
+
+.bali {
+    grid-area: bali;
+}
+
+.hawai {
+    grid-area: hawai;
+}
+
+.ajaccio {
+    grid-area: ajaccio;
+}
+
+.escocia {
+    grid-area: escocia;
+}
+
+.lanzarote {
+    grid-area: lanzarote;
+}
+
+iframe {
+    border: 3px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+
+  /** Fin Destinos **/

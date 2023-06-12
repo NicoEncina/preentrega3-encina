@@ -1,0 +1,47 @@
+/**Footer**/
+
+.contenedor-footer {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+}
+
+.derechos {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+
+
+.tdr {
+    font-size: 15px;
+    
+    
+}
+
+.logo-footer {
+    display: flex;
+    width: 80px;
+    
+    
+}
+
+.telefono {
+    display: flex;
+    align-items: center;
+}
+
+.wp {
+    width:40% ;
+    height:40%;
+}
+
+
+
+.redes {
+    display: flex;
+    align-items: center;
+}
+
+/** Fin Footer **/

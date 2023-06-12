@@ -1,0 +1,34 @@
+/** Preguntas Frecuentes **/
+
+.preguntas-frecuentes {
+    background-color: rgb(240, 240, 240);
+    .faq {
+      margin: 20px;
+    }
+    
+    .titulofq {
+      font-size: 16px;
+      color:black;
+      text-align: center;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      letter-spacing: 0.5px;
+    }
+    
+    .preguntas {
+      font-size: 18px;
+      color: #0e2430;
+      margin-bottom: 10px;
+    }
+    
+    .respuesta {
+      color:black;
+      font-size: 14px;
+      line-height: 1.4;
+      margin-bottom: 20px;
+    }
+}
+
+
+
+  /** Fin Preguntas Frecuentes **/

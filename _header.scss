@@ -1,0 +1,87 @@
+/**Header**/
+
+.contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor-logo {
+    width: 200px;
+    margin-left: 20px;
+    margin: 0;
+    
+    
+}
+
+.logo {
+    width: 80px;
+    margin-top: 5%;
+}
+
+
+
+
+
+.contenedor-navegador {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.navegacion {
+    margin-bottom: 5px; 
+}
+
+.navegacion a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    
+    
+}
+
+.navegacion a:hover {
+    color: rgb(33, 52, 95);
+    transform: scale(1.1);
+    background-color: #c9c2c2;
+    
+}
+
+
+
+form {
+    display: flex;
+    align-items: center;
+    width: 650px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button[type="submit"] svg {
+    fill: #999;
+    width: 24px;
+    height: 24px;
+    transition: all 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover svg {
+    fill: #333;
+}
+
+/**Fin Header**/
